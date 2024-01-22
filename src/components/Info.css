@@ -1,0 +1,19 @@
+/* Info.css */
+.info-container {
+    color: rgb(255, 255, 255); /* Text color */
+    background-color: rgb(0, 0, 0); /* Background color */
+    border: 2px solid black; /* Black border */
+    padding: 20px; /* Padding inside the container */
+    margin: 200px 20px 20px 20px; /* Increased top margin */
+    text-align: center; /* Center the text */
+  }
+  
+  .info-container h1 {
+    margin-bottom: 15px; /* Space below the heading */
+  }
+  
+  .info-container p {
+    font-size: 16px; /* Font size for the paragraph */
+    line-height: 1.6; /* Line height for readability */
+  }
+  

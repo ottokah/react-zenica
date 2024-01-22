@@ -1,3 +1,4 @@
+
 .hero-container {
   /* Uncomment and set the correct path to your background image */
   /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
@@ -9,6 +10,9 @@
   align-items: center;
 
 }
+.hero-video {
+  width: 100%;
+}
 
 .hero-container img {
   width: 100%;
@@ -17,17 +21,33 @@
 }
 
 .hero-container > h1 {
-  color: #000000;
+  color: #ffffff;
   font-size: 100px;
   margin-top: -100px;
+  white-space: nowrap; /* Keep the text in a single line */
+  overflow: hidden; /* Hide text that goes beyond the container */
+  position: relative; /* Position relative to allow z-index to take effect */
+  z-index: 2; /* Ensure text is above the video */
+  color: #fff; /* Text color, change as needed */
+  /* Add animation */
+  animation: rollingText 10s linear infinite;
 }
+
 
 .hero-container > p {
   margin-top: 8px;
-  color: #000000;
+  color: #ffffff;
   font-size: 32px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  white-space: nowrap; /* Keep the text in a single line */
+  overflow: hidden; /* Hide text that goes beyond the container */
+  position: relative; /* Position relative to allow z-index to take effect */
+  z-index: 2; /* Ensure text is above the video */
+  color: #fff; /* Text color, change as needed */
+  /* Add animation */
+  animation: rollingText 10s linear infinite;
 }
+
 
 .hero-btns {
   margin-top: 32px;
@@ -98,6 +118,9 @@
     font-size: 70px;
     margin-top: -150px;
   }
+  .hero-video{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -112,5 +135,14 @@
 
   .hero-btns .btn {
     width: 100%;
+  }
+}
+@media screen and (min-width: 961px) {
+  .hero-mobile-image {
+    display: none;
+  }
+  
+  .hero-video {
+    display: block;
   }
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { Link as ScrollLink } from 'react-scroll'; // Import the Link component from react-scroll
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -12,29 +12,24 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <ScrollLink to='homeA' className='navbar-logo' onClick={closeMobileMenu} smooth={true} duration={500}>
             <img src="/images/maskilogomusta.png" alt="HUU ARE YOU" />
-          </Link>
+          </ScrollLink>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            
-            {/* <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Koti
-              </Link>
+            <li className='nav-item'>
+              <ScrollLink to='infoA' className='nav-links' onClick={closeMobileMenu} smooth={true} duration={500}>
+                HUU ARE WE.
+              </ScrollLink>
             </li>
             <li className='nav-item'>
-              <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                Tietoja
-              </Link>
+              <ScrollLink to='formA' className='nav-links' onClick={closeMobileMenu} smooth={true} duration={500}>
+                HUU ARE YOU.
+              </ScrollLink>
             </li>
-            <li className='nav-item'>
-              <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                HUU
-              </Link> 
-            </li>Add additional nav-item links as needed */}
+            {/* Add additional nav-items here */}
           </ul>
         </div>
       </nav>

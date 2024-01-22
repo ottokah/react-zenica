@@ -4,31 +4,20 @@ import { Button } from './Button';
 import './HeroSection.css';
 
 function HeroSection() {
-
- 
-  // Function to handle when the Kuuntele button is clicked
   const handleKuunteleClick = () => {
     window.location.href = 'https://www.youtube.com/watch?v=cFpTJSRcDBw'; 
   };
 
   return (
     <div className='hero-container'>
-      <video src='/images/video-1.mp4' autoPlay loop muted />
-   
-
-      <div className='hero-btns'>
-        
-
-       
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-          onClick={handleKuunteleClick} // Set the onClick handler
-        >
-          Kuuntele <i className='far fa-play-circle' />
-        </Button>
-      </div>
+      <video className="hero-video" src='/images/video-1.mp4' autoPlay loop muted />
+      
+      <img 
+        className="hero-mobile-image" 
+        src="/images/huuhkajatie.jpg" // replace with your mobile image path
+        alt="Mobile Display" 
+      />
+      
     </div>
   );
 }

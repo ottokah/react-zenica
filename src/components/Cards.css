@@ -25,15 +25,15 @@ h1 {
 .cards__items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* This will space out the items evenly */
-  align-items: stretch; /* This will make sure that all items stretch to fill the container */
-  width: 100%; /* Ensure this takes full width */
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%; /* Set the cards__items to take 100% width */
   margin-bottom: 24px;
 }
 
 .cards__item {
   display: flex;
-  flex: 1 1 calc(50% - 2rem); 
+  flex: 1 1 calc(100% - 2rem); /* Adjust width to take 100% width and add spacing */
   margin: 1rem;
   border-radius: 10px;
 }
@@ -61,8 +61,6 @@ h1 {
   animation-name: fade-img;
   animation-duration: 2s;
 }
-
-
 
 .cards__item__img {
   position: absolute;
@@ -113,6 +111,6 @@ h1 {
 
 @media only screen and (max-width: 1024px) {
   .cards__item {
-    flex-basis: 100%; 
+    flex-basis: 100%;
   }
 }

@@ -5,11 +5,11 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>HUU ARE YOU</h1>
+ 
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
-             <CardItem
+/*             <CardItem
               src='images/huuareyou.png'
               text='HUU ARE YOU.'
            
@@ -26,7 +26,7 @@ function Cards() {
           
         </div>
       </div>
-    </div>
+    </div> 
   );
 } 
 

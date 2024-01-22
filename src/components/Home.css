@@ -1,0 +1,5 @@
+/* Add to your CSS file */
+.hero-section, .info-section, .form-section {
+    min-height: 500px; /* Adjust as necessary */
+  }
+  
