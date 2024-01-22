@@ -20,7 +20,7 @@ function Footer() {
           <div class='social-icons'>
             <Link
               class='social-icon-link instagram'
-              to='/'
+              to='https://www.instagram.com/zenicanveteraanit/'
               target='_blank'
               aria-label='Instagram'
             >
@@ -28,7 +28,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link youtube'
-              to='/'
+              to='https://www.youtube.com/@ZenicanVeteraanit'
               target='_blank'
               aria-label='Youtube'
             >
@@ -36,7 +36,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link twitter'
-              to='/'
+              to='https://twitter.com/ZenicanV'
               target='_blank'
               aria-label='Twitter'
             >

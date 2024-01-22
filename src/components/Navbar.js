@@ -1,36 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  useEffect(() => {
-    showButton();
-    // Add event listener
-    const handleResize = () => {
-      showButton();
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    // Clean up event listener
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
     <>
@@ -58,9 +34,8 @@ function Navbar() {
                 HUU
               </Link>
             </li>
-     
+            {/* Add additional nav-item links as needed */}
           </ul>
-       
         </div>
       </nav>
     </>
