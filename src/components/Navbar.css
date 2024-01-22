@@ -123,7 +123,7 @@
         z-index: 1000; 
       }
   
-      .menu-icon {
+     /* .menu-icon {
         display: block;
         position: absolute;
         top: 0;
@@ -132,7 +132,7 @@
         font-size: 1.8rem;
         cursor: pointer;
         z-index: 1001;
-      }
+      } */
     .fa-times {
       color: #fff;
       font-size: 2rem;
@@ -189,15 +189,15 @@
         font-size: 1.4rem; /* Optionally increase the font size */
       }
     
-      .menu-icon {
-        display: block; /* Ensure the menu icon is displayed */
-        position: absolute; /* Position the menu icon absolutely within the navbar-container */
-        right: 20px; /* Align it 20px from the right */
+      /*.menu-icon {
+        display: block; 
+        position: absolute; 
+        right: 20px; 
         top: 50%;
-        transform: translateY(-50%); /* Center it vertically */
-        font-size: 2.5rem; /* Increase the size of the hamburger icon */
-        z-index: 1001; /* Ensure it's above the logo */
-      }
+        transform: translateY(-50%); 
+        font-size: 2.5rem; 
+        z-index: 1001;  
+      } */
       
       .nav-menu {
         top: 100px; /* Adjust the top position of the menu to align with the new navbar height */
