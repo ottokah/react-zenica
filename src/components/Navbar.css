@@ -1,5 +1,5 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(26, 23, 23) 100%);
+    background: black;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -17,18 +17,23 @@
     height: 80px;
     width: 100%; /* Set width to 100% */
     padding: 0 20px; 
-  }
-  .navbar-logo img {
-    height: 100%;
-    width: auto;
-    height: 80px;
+    position: relative;
   }
   
-  .navbar-logo {
-    display: flex;
-    align-items: center;
-    height: 80px;
-  }
+.navbar-logo {
+  position: absolute; 
+  top: 0; 
+  left: 20px; 
+  height: 80px; 
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 100%;
+  width: auto;
+}
+
   
   
   .fa-typo3 {
@@ -66,6 +71,10 @@
   .menu-icon {
     display: none;
     cursor: pointer;
+    position: absolute;
+    right: 20px; /* Align it to the right of the navbar-container with some padding */
+    top: 50%;
+    transform: translateY(-50%); /* Align vertically to the center */
   }
   
 
@@ -154,19 +163,20 @@
 
 @media screen and (max-width: 1024px) {
   .navbar {
-    height: 160px; /* Double the height of the navbar */
+    height: 160px; 
   }
 
   .navbar-container {
-    height: 160px; /* Double the height of the container */
+    height: 160px; 
   }
 
   .navbar-logo img {
-    max-height: 160px; /* Adjust the logo size as necessary */
+    max-height: 160px; 
   }
 
   .navbar-logo {
-    height: 160px; /* Adjust the logo container size as necessary */
+    height: 100px;
+    left: 40px; 
   }
 
   .nav-links {
@@ -177,7 +187,7 @@
   .menu-icon {
     font-size: 2.5rem; /* Optionally increase the size of the hamburger icon */
     top: 50%;
-    transform: translate(-100%, -50%); /* Adjust vertical position */
+    transform: translate(-100%, -50%); 
   }
   
   .nav-menu {
