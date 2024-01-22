@@ -161,36 +161,50 @@
   
    
 
-@media screen and (max-width: 1024px) {
-  .navbar {
-    height: 160px; 
-  }
+    @media screen and (max-width: 1024px) {
+      .navbar {
+        height: 100px; /* Set the navbar height */
+      }
+    
+      .navbar-container {
+        justify-content: flex-start; /* Align children (logo and menu icon) to the start */
+      }
+    
+      .navbar-logo {
+        position: absolute; /* Position the logo absolutely within the navbar-container */
+        left: 20px; /* Align it 20px from the left */
 
-  .navbar-container {
-    height: 160px; 
-  }
-
-  .navbar-logo img {
-    max-height: 160px; 
-  }
-
-  .navbar-logo {
-    height: 100px;
-    left: 40px; 
-  }
-
-  .nav-links {
-    padding: 1.5rem 1rem; /* Increase padding to match the new height */
-    font-size: 1.4rem; /* Optionally increase the font size */
-  }
-
-  .menu-icon {
-    font-size: 2.5rem; /* Optionally increase the size of the hamburger icon */
-    top: 50%;
-    transform: translate(-100%, -50%); 
-  }
-  
-  .nav-menu {
-    top: 160px; /* Adjust the top position of the menu to align with the new navbar height */
-  }
-}
+        height: 100px; /* Set the height to match the navbar */
+        transform: translateY(-50%); /* No need for this since top is 0 */
+        z-index: 1000; /* Ensure it's above other elements */
+      }
+    
+      .navbar-logo img {
+        height: 100%; /* The logo img will fill the height of its container */
+        width: auto; /* Keep the width auto to maintain aspect ratio */
+      }
+    
+      .nav-links {
+        padding: 1.5rem 1rem; /* Increase padding to match the new height */
+        font-size: 1.4rem; /* Optionally increase the font size */
+      }
+    
+      .menu-icon {
+        display: block; /* Ensure the menu icon is displayed */
+        position: absolute; /* Position the menu icon absolutely within the navbar-container */
+        right: 20px; /* Align it 20px from the right */
+        top: 50%;
+        transform: translateY(-50%); /* Center it vertically */
+        font-size: 2.5rem; /* Increase the size of the hamburger icon */
+        z-index: 1001; /* Ensure it's above the logo */
+      }
+      
+      .nav-menu {
+        top: 100px; /* Adjust the top position of the menu to align with the new navbar height */
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Ensure the width is 100% to cover the screen */
+        opacity: 1; /* Set the opacity for visibility */
+      }
+    }
+    
