@@ -13,7 +13,9 @@ function HeroSection() {
 
   return (
     <div className='hero-container'>
-      <img src='/images/huuhkajatie.jpg' alt='Huuhkajatie' />
+      <video src='/images/video-1.mp4' autoPlay loop muted />
+   
+
       <div className='hero-btns'>
         
 
