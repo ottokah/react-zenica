@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7f7;
+        }
+
+        .launch-container {
+            text-align: center;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        img {
+            /* Adjust width and height as necessary */
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="launch-container">
+        <img src="/public/images/etukansi (1).png" alt="Hovering Image">
+        <!-- Replace 'your-image.jpg' with the path to your actual image -->
+    </div>
+
+    <script>
+        // JavaScript to redirect after 3 seconds
+        setTimeout(function() {
+            window.location.href = 'index.html'; // Redirect to index.html
+        }, 3000);
+    </script>
+</body>
+</html>
