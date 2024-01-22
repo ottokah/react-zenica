@@ -150,3 +150,37 @@
       transition: 250ms;
     }
   
+   
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    height: 160px; /* Double the height of the navbar */
+  }
+
+  .navbar-container {
+    height: 160px; /* Double the height of the container */
+  }
+
+  .navbar-logo img {
+    max-height: 160px; /* Adjust the logo size as necessary */
+  }
+
+  .navbar-logo {
+    height: 160px; /* Adjust the logo container size as necessary */
+  }
+
+  .nav-links {
+    padding: 1.5rem 1rem; /* Increase padding to match the new height */
+    font-size: 1.4rem; /* Optionally increase the font size */
+  }
+
+  .menu-icon {
+    font-size: 2.5rem; /* Optionally increase the size of the hamburger icon */
+    top: 50%;
+    transform: translate(-100%, -50%); /* Adjust vertical position */
+  }
+  
+  .nav-menu {
+    top: 160px; /* Adjust the top position of the menu to align with the new navbar height */
+  }
+}
