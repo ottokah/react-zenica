@@ -24,10 +24,6 @@ function Home() {
 
       
 
-      <Element name="formA">
-        <Form />
-      </Element>
-
       {/* Footer doesn't typically need to be a scrollable section since it's at the bottom */}
       <Footer />
     </>

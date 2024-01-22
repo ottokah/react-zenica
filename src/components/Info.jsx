@@ -4,6 +4,11 @@ import "./Info.css";
 const Info = () => {
   return (
     <div className="info-container">
+      
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <h1>Zenican veteraanit</h1>
       <p>Kantahuuhkaja, yössä lentäjä,<br/>
       Metsän tumman syliin kätketty.<br/>
