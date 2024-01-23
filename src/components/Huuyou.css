@@ -45,15 +45,26 @@
 
 
 
-
 @media screen and (max-width: 960px) {
   .textOverlay {
-    font-size: 10vw; /* Slightly larger font size for medium screens */
+    font-size: 15vw; /* Larger font size for medium screens */
   }
 }
 
 @media screen and (max-width: 768px) {
   .textOverlay {
-    font-size: 10vw; /* Larger font size for small screens */
+    font-size: 20vw; /* Even larger font size for small screens */
   }
+}
+
+@media screen and (max-width: 480px) {
+  .textOverlay {
+    font-size: 25vw; /* Maximum font size for very small screens */
+    max-font-size: 40px; /* Set a maximum font size to avoid overflow */
+  }
+}
+
+.word, .fullPhrase {
+  /* Adjust the font size similarly for individual words and full phrase if needed */
+  font-size: inherit; /* This will make them inherit the size from .textOverlay */
 }

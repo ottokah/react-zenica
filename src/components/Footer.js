@@ -17,6 +17,7 @@ function Footer() {
             </Link>
           </div>
           <small class='website-rights'>Zenican veteraanit RY © 2024</small>
+          <small class='website-rights'>HUU ARE YOU.</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link instagram'
