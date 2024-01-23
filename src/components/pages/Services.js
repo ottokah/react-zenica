@@ -8,7 +8,7 @@ export default function Services() {
     <div className="services-container">
       <h1 className='services'>Our Services</h1>
       <p className='services-description'>
-        RAEGEGEGEGEGEGEGEGEGEGEGEGEGEGEGEGEGEGEG
+        Testi
       </p>
       
       <div className='service-list'>

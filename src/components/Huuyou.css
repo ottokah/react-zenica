@@ -1,0 +1,59 @@
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Set the height of the hero section to full viewport height */
+  display: flex;
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  overflow: hidden; /* Hide overflow */
+}
+
+.hero-image {
+  width: 100%; /* Image takes the full width of the container */
+  height: 100vh; /* Image takes the full viewport height */
+  object-fit: cover; /* Ensures the image covers the full area, may crop if aspect ratio is different */
+  position: relative; /* Needed to maintain the stack order with text */
+  z-index: 1; /* Send image behind the text */
+}
+
+.textOverlay {
+  position: absolute; /* Position the text absolutely to place it on top of the image */
+  top: 50%; /* Align the text to the middle vertically */
+  left: 50%; /* Align the text to the middle horizontally */
+  transform: translate(-50%, -50%); /* Adjust the positioning to truly center the text */
+  color: white; /* Set the text color to white for better visibility */
+  font-size: 10vw; /* Responsive font size */
+  font-weight: bold;
+  z-index: 2; /* Set z-index higher than the image to ensure text is above */
+  display: flex; /* Align words inline */
+  gap: 1rem; /* Spacing between words */
+}
+
+
+
+.word, .fullPhrase {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10vw;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+
+@media screen and (max-width: 960px) {
+  .textOverlay {
+    font-size: 10vw; /* Slightly larger font size for medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .textOverlay {
+    font-size: 10vw; /* Larger font size for small screens */
+  }
+}

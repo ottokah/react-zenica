@@ -1,11 +1,17 @@
-
+@font-face {
+    font-family: 'Helvetica73Bold';
+    src: url('./fonts/Helvetica73.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
 
 .info-container {
     color: rgb(255, 255, 255); /* Text color */
     background-color: rgb(0, 0, 0); /* Background color */
     border: 2px solid black; /* Black border */
     padding: 20px; /* Padding inside the container */
-    font-family: 'Helvetica-Bold', Arial, sans-serif; 
+    font-family: 'Helvetica73Bold', sans-serif;
     text-align: center; /* Center the text */
 }
 

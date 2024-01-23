@@ -7,6 +7,7 @@ import Footer from '../Footer';
 import Cards from "../Cards";
 import Form from "../Form";
 import '../Home.css';
+import Huuyou from "../Huuyou";
 
 
 function Home() {
@@ -20,6 +21,10 @@ function Home() {
       
       <Element name="infoA">
         <Info />
+      </Element>
+
+      <Element name="formA">
+        <Huuyou />
       </Element>
 
       
