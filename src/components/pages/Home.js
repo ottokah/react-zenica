@@ -19,9 +19,7 @@ function Home() {
         <HeroSection />
       </Element>
       
-      /*<Element name="infoA">
-        <Info />
-      </Element>
+  
 
       <Element name="formA">
         <Huuyou />

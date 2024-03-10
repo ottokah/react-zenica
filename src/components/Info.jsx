@@ -1,27 +1,40 @@
 import React from 'react';
-import "./Info.css"; // Ensure this CSS file also includes styles for the new placeholders
+import "./Info.css";
 
 const Info = () => {
   return (
     <div className="info-container">
-    
-
-     
-      <div className="instagram-placeholder">
-        <div className="profile-top">
-          <div className="profile-picture"></div>
-      
-          <div className="username-placeholder"></div>
-        </div>
-        <div className="posts-grid">
-          {Array.from({ length: 9 }).map((_, index) => (
-            <div key={index} className="post-placeholder"></div>
-          ))}
-        </div>
+      <div className="social-icons">
+        <a
+          className="social-icon-link instagram"
+          href="https://www.instagram.com/zenicanveteraanit/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i className="fab fa-instagram" />
+        </a>
+        <a
+          className="social-icon-link youtube"
+          href="https://www.youtube.com/@ZenicanVeteraanit"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Youtube"
+        >
+          <i className="fab fa-youtube" />
+        </a>
+        <a
+          className="social-icon-link twitter"
+          href="https://twitter.com/ZenicanV"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter"
+        >
+          <i className="fab fa-twitter" />
+        </a>
       </div>
     </div>
   );
 };
 
 export default Info;
-
