@@ -19,7 +19,7 @@ function Home() {
         <HeroSection />
       </Element>
       
-      <Element name="infoA">
+      /*<Element name="infoA">
         <Info />
       </Element>
 

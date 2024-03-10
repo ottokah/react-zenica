@@ -1,41 +1,27 @@
 import React from 'react';
-import "./Info.css";
+import "./Info.css"; // Ensure this CSS file also includes styles for the new placeholders
 
 const Info = () => {
   return (
     <div className="info-container">
+    
+
+     
+      <div className="instagram-placeholder">
+        <div className="profile-top">
+          <div className="profile-picture"></div>
       
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <h1>Zenican veteraanit</h1>
-      <p>Kantahuuhkaja, yössä lentäjä,<br/>
-      Metsän tumman syliin kätketty.<br/>
-      Siivet hiljaiset, kuin haaveet vanhat,<br/>
-      Yön verhon läpi liitää, tähdet katsellen.</p>
-
-      <p>Kuusien korkeat tornit,<br/>
-      Joissa sen koti piilossa pysyy,<br/>
-      Kuiskaten salaisuudet puiden,<br/>
-      Tuulen lauluun ne sulautuvat syvään.</p>
-
-      <p>Silmissä viisauden pilke,<br/>
-      Katsellen kuun kelmeää valoa.<br/>
-      Metsän varjoista sen siluetti,<br/>
-      Kuin ajan virta, virtaa hiljalleen.</p>
-
-      <p>Kaukaa kuuluu sen huuto,<br/>
-      Kaiun lailla läpi yön kantautuen.<br/>
-      Se kertoo tarinaa vanhasta,<br/>
-      Menneistä ajoista, luonnon äänettömästä laulusta.</p>
-
-      <p>Metsän siimeksessä se tarkkailee,<br/>
-      Salaisuuksia yön, tarinoita tuulen.<br/>
-      Kantahuuhkaja, metsän vartija,<br/>
-      Ikuisuuden siivillä, kulkija yössä hiljaisen.</p>
+          <div className="username-placeholder"></div>
+        </div>
+        <div className="posts-grid">
+          {Array.from({ length: 9 }).map((_, index) => (
+            <div key={index} className="post-placeholder"></div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Info;
+
