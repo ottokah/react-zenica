@@ -10,7 +10,7 @@ function HeroSection() {
 
   return (
     <div className='hero-container'>
-      <video className="hero-video" src='/images/video-1.mp4' autoPlay loop muted />
+      <img className="hero-video" src='/images/huuhkajataidalla.jpg'  />
       
       <img 
         className="hero-mobile-image" 

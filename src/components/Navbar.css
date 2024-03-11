@@ -13,7 +13,7 @@
 
 .navbar-container {
   display: flex;
-  justify-content: space-between; /* This will put space between the logo and nav items */
+  
   align-items: center;
   width: 100%;
   max-width: 1200px; /* Set a max-width for the inner content */
